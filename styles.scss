@@ -1,0 +1,266 @@
+@mixin companyCircle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: 1px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+}
+p, a, button{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+h1{
+    font-size: 80px;
+    line-height: 1.2;
+}
+main{
+    padding: 30px 30px 0 30px;height: 100%;
+    width: 100%;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .right-nav{
+        display: flex;
+        gap: 40px;
+        width: 100%;
+        justify-content: end;
+        align-items: center;
+        button{
+            background-color: transparent;
+            width: 150px;
+            height: 50px;
+            &:hover{
+                background-color: #E3FD8F;
+            }
+        }
+    }
+    .right-nav-two{
+        display: none;
+        .menu-lines{
+            width: 20px;
+            height: 2px;
+            background-color: black;
+        }
+    }
+    .left-nav{
+        display: flex;
+        align-items: center;
+        .company-description{
+            width: 50%;
+        }
+        .company-logo{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            width: fit-content;
+            height: 40px;
+            padding-right: 15px;
+            margin-right: 10px;
+            border-right: 2px solid rgb(208, 205, 205) ;
+            .company-logo-circles{
+                display: flex;
+                margin-right: 10px;
+                gap:1px;
+            .company-logo-circle1{
+                @include companyCircle();
+                background-color: rgb(57, 57, 57);
+                
+            }
+            .company-logo-circle2{
+                @include companyCircle();
+                background-color: rgb(193, 198, 198);
+            }
+        }
+        }
+    }
+}
+header{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+    position: relative;
+    .header-text{
+        width: 80%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .header-subtext{
+            margin-top: 20px;
+            width: 60%;
+            color: rgb(132, 132, 132);
+            p{
+                font-weight: 500;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+            
+        }
+    }
+    .header-buttons{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        button{
+            width: 150px;
+            height: 50px;
+            border: none;
+        }
+        .header-button-one{
+            background-color: #E7E8EC;
+        }
+        .header-button-two{
+            background-color: #000;
+            color: white;
+        }
+    }
+    
+}
+.tiles-section{
+   display: flex;
+   gap: 20px;
+   width: 100%;
+ height: 100%;
+   margin-top: 40px;
+   .tiles-section-one{
+    width:20%;
+    height: 50%;
+    background-color: #000;
+    border-radius: 30px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        object-fit: cover;
+
+    }
+   }
+   .tiles-section-five{
+    width:20%;
+    height: 50%;
+    background-color: #000;
+    border-radius: 30px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        object-fit: cover;
+
+    }
+   }.tiles-section-four{
+    width:20%;
+    height: 50%;
+    
+    overflow: hidden; 
+    .tiles-section-four-top{
+        height: 50%;
+        width: 100%;
+        background-color: #000;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-size: 32px ;
+    }
+    p{
+        font-weight: 500;
+                line-height: 1.5;
+                font-size: 16px;
+                color: rgb(132, 132, 132);
+    }
+    }
+    .tiles-section-four-down{
+        height: 50%;
+        width: 100%;
+        .tiles-section-four-down-one{
+            height: 100%;
+        width: 50%;
+        background-color: #000;
+    border-radius: 30px;
+    color: white;
+        }
+        .tiles-section-four-down-two{
+            height: 100%;
+        width: 50%;
+        background-color: #000;
+    border-radius: 30px;
+    color: white;
+        }
+    }
+   }.tiles-section-two{
+    width:20%;
+    height: 50%;
+    background-color: #000;
+    border-radius: 30px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        object-fit: cover;
+
+    }
+   }.tiles-section-three{
+    width:20%;
+    height: 50%;
+    background-color: #000;
+    border-radius: 30px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        object-fit: cover;
+
+    }
+   }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    nav{
+        .right-nav{
+            display: none;
+        }
+        .right-nav-two{
+            display: flex;
+
+            flex-direction: column;
+        gap: 5px;
+        }
+        .company-description{
+            display: none;
+        }
+        .company-logo{
+            padding: 0px !important;
+            margin: 0px !important;
+            border: none !important;
+        }
+    }
+    header{
+        .header-subtext{
+            width: 100%;
+        }
+        .header-buttons{
+            flex-direction: column;
+        }
+        h1{
+            font-size: 44px;
+        }
+    }
+  }
