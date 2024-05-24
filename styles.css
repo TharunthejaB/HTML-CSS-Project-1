@@ -138,13 +138,16 @@ header .header-buttons .header-button-two {
   display: flex;
   gap: 20px;
   width: 100%;
-  height: 100%;
+  padding-bottom: 40px;
   margin-top: 40px;
 }
-.tiles-section .tiles-section-one {
+.tiles-section .tiles-section-one,
+.tiles-section .tiles-section-two,
+.tiles-section .tiles-section-three,
+.tiles-section .tiles-section-four,
+.tiles-section .tiles-section-five {
+  max-height: 300px;
   width: 20%;
-  height: 50%;
-  background-color: #000;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -154,11 +157,7 @@ header .header-buttons .header-button-two {
      object-fit: cover;
 }
 .tiles-section .tiles-section-two {
-  width: 20%;
-  height: 50%;
   background-color: #E3FD8F;
-  border-radius: 30px;
-  overflow: hidden;
   padding: 15px 20px;
   position: relative;
 }
@@ -210,7 +209,7 @@ header .header-buttons .header-button-two {
   background-color: #E7E8EC;
   border-radius: 30px;
   overflow: hidden;
-  padding: 15px 20px;
+  padding: 20px 20px;
   position: absolute;
   left: 0;
   top: 180px;
@@ -225,26 +224,21 @@ header .header-buttons .header-button-two {
   width: 50%;
 }
 .tiles-section .tiles-section-two .tiles-section-two-three .tiles-section-two-three-two {
-  width: 32%;
-  height: 23%;
+  width: 60px;
+  height: 60px;
   background-color: #fff;
   border-radius: 50%;
-  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   top: 7px;
 }
 .tiles-section .tiles-section-two .tiles-section-two-three .tiles-section-two-three-two i {
   font-size: 42px;
   color: rgb(145, 145, 145);
   font-weight: 300;
-  position: relative;
-  top: 5px;
 }
 .tiles-section .tiles-section-three {
-  width: 20%;
-  height: 50%;
-  overflow: hidden;
   display: flex;
 }
 .tiles-section .tiles-section-three .tiles-section-three-one {
@@ -274,11 +268,6 @@ header .header-buttons .header-button-two {
   height: 100%;
   -o-object-position: -161px 0;
      object-position: -161px 0;
-}
-.tiles-section .tiles-section-four {
-  width: 20%;
-  height: 50%;
-  overflow: hidden;
 }
 .tiles-section .tiles-section-four .tiles-section-four-top {
   height: 50%;
@@ -343,12 +332,6 @@ header .header-buttons .header-button-two {
   font-size: 16px;
   color: rgb(132, 132, 132);
 }
-.tiles-section .tiles-section-five {
-  width: 20%;
-  height: 50%;
-  border-radius: 30px;
-  overflow: hidden;
-}
 .tiles-section .tiles-section-five img {
   width: 100%;
   -o-object-fit: cover;
@@ -408,16 +391,17 @@ header .header-buttons .header-button-two {
   .tiles-section .tiles-section-five {
     width: 100%;
     margin-top: 20px;
-  }
-  .tiles-section .tiles-section-two {
     height: 60%;
   }
-  .tiles-section .tiles-section-two .tiles-section-two-three-two {
-    width: 29% !important;
-  }
   .tiles-section .tiles-section-three .tiles-section-three-one img {
-    -o-object-position: -32px 0;
-       object-position: -32px 0;
+    -o-object-position: -100% 0;
+       object-position: -100% 0;
+    transform: scale(2);
+  }
+  .tiles-section .tiles-section-three .tiles-section-three-two img {
+    -o-object-position: -163% 0;
+       object-position: -163% 0;
+    transform: scale(2);
   }
   .tiles-section .tiles-section-five .tiles-section-five-one img {
     -o-object-position: 0 -22px;
