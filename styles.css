@@ -386,18 +386,4 @@ header .header-buttons .header-button-two {
     width: 100%;
     margin-top: 20px;
   }
-  .tiles-section .tiles-section-three .tiles-section-three-one img {
-    -o-object-position: -100% 0;
-       object-position: -100% 0;
-    transform: scale(2);
-  }
-  .tiles-section .tiles-section-three .tiles-section-three-two img {
-    -o-object-position: -163% 0;
-       object-position: -163% 0;
-    transform: scale(2);
-  }
-  .tiles-section .tiles-section-five .tiles-section-five-one img {
-    -o-object-position: 0 -22px;
-       object-position: 0 -22px;
-  }
 }/*# sourceMappingURL=styles.css.map */

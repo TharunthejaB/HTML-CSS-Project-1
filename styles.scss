@@ -5,7 +5,6 @@
 }
 
 
-
 *{
     margin: 0;
     padding: 0;
@@ -382,28 +381,6 @@ header{
         .tiles-section-five{
             width: 100%;
             margin-top: 20px;
-            // height: 60%;
-        }
-        .tiles-section-three{
-            .tiles-section-three-one{
-                img{
-                object-position: -100% 0;
-                transform: scale(2);
-                }
-            }
-            .tiles-section-three-two{
-                img{
-                object-position: -163% 0;
-                transform: scale(2);
-                }
-            }
-        }
-        .tiles-section-five{
-            .tiles-section-five-one{
-                img{
-                object-position: 0 -22px;
-                }
-            }
         }
     }
   }
